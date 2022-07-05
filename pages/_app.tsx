@@ -1,13 +1,18 @@
 import "../styles/globals.css";
+import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
 
+import SEO from "../next-seo-config";
 import { Layout } from "@/components";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <DefaultSeo {...SEO} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
 

@@ -3,6 +3,21 @@ import { BiMenuAltLeft } from "react-icons/bi";
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 
 export const Navbar = () => {
+  const navIcons = [
+    {
+      Icon: FaGithubSquare,
+      href: "https://github.com/joshxfi",
+    },
+    {
+      Icon: FaLinkedin,
+      href: "https://www.linkedin.com/in/joshdanielb",
+    },
+    {
+      Icon: FaTwitterSquare,
+      href: "https://twitter.com/joshxfi",
+    },
+  ];
+
   return (
     <nav className="mt-8 flex items-center justify-between">
       <button className="text-2xl md:text-3xl lg:hidden">
@@ -18,9 +33,9 @@ export const Navbar = () => {
       </ul>
 
       <ul className="flex space-x-16 text-2xl md:text-3xl">
-        {[FaGithubSquare, FaLinkedin, FaTwitterSquare].map((Icon) => (
-          <li key={Icon.toString()} className="nav-item">
-            <a href="#">
+        {navIcons.map(({ Icon, href }) => (
+          <li key={href} className="nav-item">
+            <a href={href} target="_blank" rel="noreferrer noopener">
               <Icon />
             </a>
           </li>

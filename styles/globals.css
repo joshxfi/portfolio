@@ -13,7 +13,7 @@
 }
 
 @layer base {
-  html {
-    @apply font-amiri;
+  body {
+    @apply font-amiri bg-secondary text-primary;
   }
 }

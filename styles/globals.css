@@ -14,6 +14,12 @@
 
 @layer base {
   body {
-    @apply font-amiri bg-secondary text-primary;
+    @apply font-amiri bg-secondary text-primary text-lg;
+  }
+}
+
+@layer components {
+  .nav-item {
+    @apply hover:text-primary/80 transition-colors;
   }
 }

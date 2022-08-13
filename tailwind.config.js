@@ -7,10 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        amiri: ["Amiri", "serif"],
+        syne: ["Syne", "sans-serif"],
+      },
       colors: {
         primary: "#F9F9F9",
-        secondary: "#0C0E0C",
-        tertiary: "#181A18",
+        secondary: {
+          50: "#AEAEAE",
+          100: "#181A18",
+          200: "#0C0E0C",
+        },
       },
     },
   },

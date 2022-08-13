@@ -4,22 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.font-syne {
-  font-family: "Syne", sans-serif;
-}
-
-.font-amiri {
-  font-family: "Amiri", serif;
-}
-
 @layer base {
   body {
-    @apply font-amiri bg-secondary text-primary text-lg;
-  }
-}
-
-@layer components {
-  .nav-item {
-    @apply hover:text-primary/80 transition-colors;
+    @apply font-amiri bg-secondary-200 text-primary text-lg;
   }
 }

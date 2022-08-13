@@ -1,6 +1,6 @@
 import React from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaGithubSquare, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 
 export const Navbar = () => {
   const navIcons = [
@@ -9,8 +9,8 @@ export const Navbar = () => {
       href: "https://github.com/joshxfi",
     },
     {
-      Icon: FaLinkedin,
-      href: "https://www.linkedin.com/in/joshdanielb",
+      Icon: FaInstagramSquare,
+      href: "https://instagram.com/josh.xfi",
     },
     {
       Icon: FaTwitterSquare,
@@ -26,7 +26,7 @@ export const Navbar = () => {
       <ul className="hidden space-x-16 lg:flex">
         <li className="text-xl">!XFI</li>
         {["About", "Projects", "Contact"].map((t) => (
-          <li key={t} className="nav-item">
+          <li key={t} className="text-secondary-50 hover:text-secondary-50/80 transition-colors">
             <a href="#">{t}</a>
           </li>
         ))}
@@ -34,7 +34,7 @@ export const Navbar = () => {
 
       <ul className="flex space-x-16 text-2xl md:text-3xl">
         {navIcons.map(({ Icon, href }) => (
-          <li key={href} className="nav-item">
+          <li key={href} className="hover:text-primary/80 transition-colors">
             <a href={href} target="_blank" rel="noreferrer noopener">
               <Icon />
             </a>

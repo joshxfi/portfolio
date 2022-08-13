@@ -3,7 +3,7 @@ const description = "A freelance software developer based in the Phillippines.";
 const imgUrl =
   "https://user-images.githubusercontent.com/69457996/177263828-e87560af-7d5f-4cdd-b8bc-b28ad7654e7a.png";
 
-export default {
+const seoConfig = {
   title: "Josh Daniel Bañares",
   description,
   openGraph: {
@@ -36,3 +36,5 @@ export default {
     cardType: "summary_large_image",
   },
 };
+
+export default seoConfig;

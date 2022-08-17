@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "./Navbar";
+import { Navbar, Footer } from ".";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -8,6 +8,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
         <Navbar />
       </div>
       {children}
+      <Footer />
     </main>
   );
 };

@@ -26,7 +26,7 @@ export const Navbar = () => {
       <ul className="hidden space-x-16 lg:flex">
         <li className="text-xl">!XFI</li>
         {["About", "Projects", "Contact"].map((t) => (
-          <li key={t} className="text-secondary-50 hover:text-secondary-50/80 transition-colors">
+          <li key={t} className="text-secondary-50 hover:text-secondary-50/80 text-lg transition-colors">
             <a href="#">{t}</a>
           </li>
         ))}

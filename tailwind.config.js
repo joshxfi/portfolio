@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         amiri: ["Amiri", "serif"],
         syne: ["Syne", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         primary: "#F9F9F9",

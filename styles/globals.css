@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Syne:wght@500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Syne:wght@500;600;800&family=Inter:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +6,6 @@
 
 @layer base {
   body {
-    @apply font-amiri bg-secondary-200 text-primary text-lg;
+    @apply font-amiri bg-secondary-200 text-primary;
   }
 }
